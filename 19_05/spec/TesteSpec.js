@@ -32,4 +32,24 @@ describe("Lista de testes", function(){
             expect(res).toEqual(true);
         })
      })
+
+
+     describe ("Pessoa", function (){
+
+        var pessoa = new Pessoa ("Maria", "Pereira", 52, "Castanho");
+
+        it("Método - nome", function(){
+            expect("Maria Pereira").toBe(pessoa.nome());
+
+        });
+
+            it("Método - nome_idade", function(){
+                expect("Maria Pereira tem idade igual a 52").toBe(pessoa.nome_idade());
+
+            });
+
+                it("Método - nome_CorCabelo", function(){
+                    expect("Maria Pereira tem cabelo com cor Castanho").toBe(pessoa.nome_CorCabelo());
+                });
+            });
 });

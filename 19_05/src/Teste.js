@@ -35,3 +35,25 @@ function comparacao(){
 }
 
 console.log(comparacao())
+
+
+function Pessoa(_Nome, _SobreNome, _Idade, _CorCabelo){
+    
+    var nome = _Nome;
+    var SobreNome = _SobreNome;
+    var idade = _Idade;
+    var CorCabelo = _CorCabelo;
+
+    this.nome = function(){
+        return nome + " " + SobreNome;
+
+    }
+    this.nome_idade = function(){
+        return nome + " " + SobreNome + " tem idade igual a " + idade;
+
+    }
+
+    this.nome_CorCabelo = function(){
+        return nome + " " + SobreNome + " tem cabelo com cor " + CorCabelo;
+    }
+}
